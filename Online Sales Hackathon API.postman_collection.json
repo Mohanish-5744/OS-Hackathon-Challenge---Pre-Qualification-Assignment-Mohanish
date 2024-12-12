@@ -1,0 +1,900 @@
+{
+	"info": {
+		"_postman_id": "f459b2b5-22ef-4591-aa72-7f192c35a6d3",
+		"name": "Online Sales Hackathon API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25924164",
+		"_collection_link": "https://onlinesale-hackathon.postman.co/workspace/OnlineSale-Hackathon-Workspace~bfef5ca8-9f63-4934-b0e5-e395ad9652b3/collection/25924164-f459b2b5-22ef-4591-aa72-7f192c35a6d3?action=share&source=collection_link&creator=25924164"
+	},
+	"item": [
+		{
+			"name": "Bottle_Locally",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://images.unsplash.com/photo-1549049950-48d5887197a0?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 800,\r\n        \"x_max\": 1700,\r\n        \"y_max\": 2200\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/remove-background"
+			},
+			"response": [
+				{
+					"name": "Bottle_Locally",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://images.unsplash.com/photo-1549049950-48d5887197a0?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 800,\r\n        \"x_max\": 1700,\r\n        \"y_max\": 2200\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/remove-background"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 19:46:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "313"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"original_image_url\": \"https://images.unsplash.com/photo-1549049950-48d5887197a0?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    \"processed_image_url\": \"https://onlinessale-11122024.s3.ap-south-1.amazonaws.com/photo-1549049950-48d5887197a0.png\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Jacket_Locally",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1675186049563-000f7ac02c44?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 600,\r\n        \"y_min\": 1200,\r\n        \"x_max\": 2400,\r\n        \"y_max\": 4000\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/remove-background"
+			},
+			"response": [
+				{
+					"name": "Jacket_Locally",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1675186049563-000f7ac02c44?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 600,\r\n        \"y_min\": 1200,\r\n        \"x_max\": 2400,\r\n        \"y_max\": 4000\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/remove-background"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 19:47:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "333"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"original_image_url\": \"https://plus.unsplash.com/premium_photo-1675186049563-000f7ac02c44?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    \"processed_image_url\": \"https://onlinessale-11122024.s3.ap-south-1.amazonaws.com/premium_photo-1675186049563-000f7ac02c44.png\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Sofa_Locally",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1681449856688-2abd99ab5a73?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 1000,\r\n        \"x_max\": 2800,\r\n        \"y_max\": 1800\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/remove-background"
+			},
+			"response": [
+				{
+					"name": "Sofa_Locally",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1681449856688-2abd99ab5a73?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 1000,\r\n        \"x_max\": 2800,\r\n        \"y_max\": 1800\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/remove-background"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 19:48:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "333"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"original_image_url\": \"https://plus.unsplash.com/premium_photo-1681449856688-2abd99ab5a73?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    \"processed_image_url\": \"https://onlinessale-11122024.s3.ap-south-1.amazonaws.com/premium_photo-1681449856688-2abd99ab5a73.png\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Car_Locally",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://images.unsplash.com/photo-1469285994282-454ceb49e63c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 0,\r\n        \"y_min\": 700,\r\n        \"x_max\": 2600,\r\n        \"y_max\": 1700\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:5000/remove-background"
+			},
+			"response": [
+				{
+					"name": "Car_Locally",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://images.unsplash.com/photo-1469285994282-454ceb49e63c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 0,\r\n        \"y_min\": 700,\r\n        \"x_max\": 2600,\r\n        \"y_max\": 1700\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:5000/remove-background"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.1 Python/3.10.4"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 19:50:06 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "319"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"original_image_url\": \"https://images.unsplash.com/photo-1469285994282-454ceb49e63c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    \"processed_image_url\": \"https://onlinessale-11122024.s3.ap-south-1.amazonaws.com/photo-1469285994282-454ceb49e63c.png\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Bottle_Using Deploy Link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://images.unsplash.com/photo-1549049950-48d5887197a0?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 800,\r\n        \"x_max\": 1700,\r\n        \"y_max\": 2200\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+			},
+			"response": [
+				{
+					"name": "Bottle_Using Deploy Link",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://images.unsplash.com/photo-1549049950-48d5887197a0?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 800,\r\n        \"x_max\": 1700,\r\n        \"y_max\": 2200\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 21:05:03 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "233"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f086e209a153e0d-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "8a90f5a1-1e3f-4f3c"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.10"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"original_image_url\": \"https://images.unsplash.com/photo-1549049950-48d5887197a0?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    \"processed_image_url\": \"https://onlinessale-11122024.s3.ap-south-1.amazonaws.com/photo-1549049950-48d5887197a0.png\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Jacket_using Deploy Linl",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1675186049563-000f7ac02c44?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 600,\r\n        \"y_min\": 1200,\r\n        \"x_max\": 2400,\r\n        \"y_max\": 4000\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+			},
+			"response": [
+				{
+					"name": "Jacket_using Deploy Linl",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1675186049563-000f7ac02c44?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 600,\r\n        \"y_min\": 1200,\r\n        \"x_max\": 2400,\r\n        \"y_max\": 4000\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 21:06:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "238"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f0870360a406ba4-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "eb7ca8d3-5978-4ef4"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.10"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"original_image_url\": \"https://plus.unsplash.com/premium_photo-1675186049563-000f7ac02c44?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    \"processed_image_url\": \"https://onlinessale-11122024.s3.ap-south-1.amazonaws.com/premium_photo-1675186049563-000f7ac02c44.png\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Sofa_Using Deploy LInk",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1681449856688-2abd99ab5a73?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 1000,\r\n        \"x_max\": 2800,\r\n        \"y_max\": 1800\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+			},
+			"response": [
+				{
+					"name": "Sofa_Using Deploy LInk",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1681449856688-2abd99ab5a73?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 1000,\r\n        \"x_max\": 2800,\r\n        \"y_max\": 1800\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 21:09:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "239"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f08743839279c1b-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "33176666-b763-4477"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.10"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"original_image_url\": \"https://plus.unsplash.com/premium_photo-1681449856688-2abd99ab5a73?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    \"processed_image_url\": \"https://onlinessale-11122024.s3.ap-south-1.amazonaws.com/premium_photo-1681449856688-2abd99ab5a73.png\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Car Using Deploy Link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://images.unsplash.com/photo-1469285994282-454ceb49e63c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 0,\r\n        \"y_min\": 700,\r\n        \"x_max\": 2600,\r\n        \"y_max\": 1700\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+			},
+			"response": [
+				{
+					"name": "Car Using Deploy Link",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://images.unsplash.com/photo-1469285994282-454ceb49e63c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 0,\r\n        \"y_min\": 700,\r\n        \"x_max\": 2600,\r\n        \"y_max\": 1700\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 21:11:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "233"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f0876f50c5afd7d-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "fd79dad5-e6db-414b"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.10"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"original_image_url\": \"https://images.unsplash.com/photo-1469285994282-454ceb49e63c?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    \"processed_image_url\": \"https://onlinessale-11122024.s3.ap-south-1.amazonaws.com/photo-1469285994282-454ceb49e63c.png\"\n}"
+				}
+			]
+		},
+		{
+			"name": "House_Using Deploy Link",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://media.istockphoto.com/id/547451008/photo/house-on-money-stack.jpg?s=2048x2048&w=is&k=20&c=QATtaiMMto1RGJqDMByIBAXoWSIF7dnAmFixbhacfGg=\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 600,\r\n        \"y_min\": 400,\r\n        \"x_max\": 1400,\r\n        \"y_max\": 1100\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+			},
+			"response": [
+				{
+					"name": "House_Using Deploy Link",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://media.istockphoto.com/id/547451008/photo/house-on-money-stack.jpg?s=2048x2048&w=is&k=20&c=QATtaiMMto1RGJqDMByIBAXoWSIF7dnAmFixbhacfGg=\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 600,\r\n        \"y_min\": 400,\r\n        \"x_max\": 1400,\r\n        \"y_max\": 1100\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 11 Dec 2024 21:17:50 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "216"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f0880de7c1d9c1b-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "a6c6639e-c2ef-45cc"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.10"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"original_image_url\": \"https://media.istockphoto.com/id/547451008/photo/house-on-money-stack.jpg?s=2048x2048&w=is&k=20&c=QATtaiMMto1RGJqDMByIBAXoWSIF7dnAmFixbhacfGg=\",\n    \"processed_image_url\": \"https://onlinessale-11122024.s3.ap-south-1.amazonaws.com/house-on-money-stack.jpg.png\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Co-ordinates x_min > x_max",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1681449856688-2abd99ab5a73?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 1000,\r\n        \"x_max\": 28,\r\n        \"y_max\": 1800\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+			},
+			"response": [
+				{
+					"name": "Co-ordinates x_min > x_max",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1681449856688-2abd99ab5a73?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 1000,\r\n        \"x_max\": 28,\r\n        \"y_max\": 1800\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Dec 2024 03:02:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f0a7a550848f8f4-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "f571fa4c-7c1b-4f59"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.10"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Coordinate 'x_max' must be greater than 'x_min'.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Co-ordinates y_min > y_max",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1681449856688-2abd99ab5a73?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 1000,\r\n        \"x_max\": 2800,\r\n        \"y_max\": 18\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+			},
+			"response": [
+				{
+					"name": "Co-ordinates y_min > y_max",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"image_url\": \"https://plus.unsplash.com/premium_photo-1681449856688-2abd99ab5a73?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\r\n    \"bounding_box\": {\r\n        \"x_min\": 1100,\r\n        \"y_min\": 1000,\r\n        \"x_max\": 2800,\r\n        \"y_max\": 18\r\n    }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://onlinesales-api-assignment-mak.onrender.com//remove-background"
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 12 Dec 2024 03:05:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "CF-Ray",
+							"value": "8f0a7e278952fd24-SIN"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "rndr-id",
+							"value": "d3bb3b62-b8c3-460e"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "Werkzeug/3.1.3 Python/3.11.10"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Coordinate 'y_max' must be greater than 'y_min'.\"\n}"
+				}
+			]
+		}
+	]
+}
