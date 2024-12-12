@@ -23,7 +23,8 @@ s3_client = boto3.client(
     aws_access_key_id=AWS_ACCESS_KEY,
     aws_secret_access_key=AWS_SECRET_KEY
 )
-#download image from the url
+
+# Download image from the URL
 def download_image(image_url):
     response = requests.get(image_url)
     if response.status_code == 200:
@@ -31,9 +32,8 @@ def download_image(image_url):
     else:
         raise ValueError("Failed to download image.")
 
-## Validate the bounding box coordinates as given in problem statement
+# Validate the bounding box coordinates
 def validate_bounding_box(bbox):
-    
     x_min, y_min, x_max, y_max = bbox
     if x_min >= x_max:
         raise ValueError("Coordinate 'x_max' must be greater than 'x_min'.")
@@ -45,14 +45,6 @@ def remove_background_from_region(image_bytes, x1, y1, x2, y2):
     """
     Removes the background from a specified rectangular region in the image, replacing it with a white background,
     and crops the image to the specified region.
-
-    Parameters:
-        image_bytes (bytes): Byte data of the input image.
-        x1, y1 (int): Top-left coordinates of the region.
-        x2, y2 (int): Bottom-right coordinates of the region.
-
-    Returns:
-        processed_image (numpy.ndarray): The cropped image with the background removed from the specified region.
     """
     # Decode the image bytes to a NumPy array
     image_array = np.asarray(bytearray(image_bytes), dtype=np.uint8)
@@ -148,6 +140,12 @@ def remove_background():
     except Exception as e:
         # Handle unexpected errors
         return jsonify({"error": "An unexpected error occurred: " + str(e)}), 500
+
+# Add the new root endpoint
+@app.get("/")
+def read_root():
+    """Root endpoint for a welcome message."""
+    return "Welcome to Onlinesales API Assignment!"
 
 if __name__ == '__main__':
     # Run the Flask app on localhost with debugging enabled
